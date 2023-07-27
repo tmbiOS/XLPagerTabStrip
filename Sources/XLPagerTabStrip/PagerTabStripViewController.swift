@@ -373,7 +373,7 @@ open class PagerTabStripViewController: UIViewController, UIScrollViewDelegate {
         return (fromIndex, toIndex, scrollPercentage)
     }
 
-    private func reloadViewControllers() {
+    func reloadViewControllers() {
         guard let dataSource = datasource else {
             fatalError("dataSource must not be nil")
         }
